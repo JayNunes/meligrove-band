@@ -79,6 +79,8 @@ p {
 
 .click_to_order {
   color: hotpink;
+  text-align: center;
+  padding: 10px;
 }
 
 .album_info:hover {
