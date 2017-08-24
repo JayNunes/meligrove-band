@@ -1,0 +1,195 @@
+body {
+  background-image: url("../2017/background.jpg");
+  background-attachment: fixed;
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(98, 218, 220);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-shadow: 2px 2px black;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  width: 100%;
+  margin: 0 auto;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+h1 {
+  font-family: Impact;
+  font-size: 5em;
+  margin-top: 0.4em;
+  margin-bottom: 0em;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: 500;
+  margin-top: 0.4em;
+  letter-spacing: 0.05em;
+}
+
+h2:hover {
+  color: hotpink;
+}
+
+h3 {
+  font-size: 1.5em;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  margin-top: 0.4em;
+  margin-bottom: 1.2em;
+  color: rgb(240, 131, 0);
+}
+
+.band_name {
+  color: rgb(240, 131, 0);
+}
+
+.album_title {
+  color: rgb(136, 184, 64);
+  margin-top: 0em;
+}
+
+p {
+  font-weight: 400;
+  letter-spacing: 0.1em;
+}
+
+.album_info {
+  width: 40%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  font-size: 1.2em;
+  line-height: 1.5;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 30px;
+  color: lightgrey;
+  text-align: justify;
+  padding: 1px 30px;
+}
+
+.click_to_order {
+  color: hotpink;
+}
+
+.album_info:hover {
+  color: rgb(98, 218, 220);
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.show_info {
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 30px 40px;
+  width: 20%;
+  font-size: 1em;
+  line-height: 0.7;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  border-top-left-radius: 30px;
+}
+
+.show_info p {
+  color: rgb(136, 184, 64);
+}
+
+.click_for_tickets {
+  color: rgb(240, 131, 0);
+}
+
+.show_info:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.show_info:hover h3 {
+  color: rgb(98, 218, 220);
+}
+
+.show_info:hover p {
+  color: rgb(98, 218, 220);
+}
+
+.show_info:hover .click_for_tickets {
+  color: hotpink;
+}
+
+.instagram {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 10px;
+}
+
+.instagram img {
+  width: 50px;
+  height: 50px;
+  padding: 8px;
+  opacity: 0.4;
+}
+
+.instagram:hover img {
+  background-color: rgb(98, 218, 220);
+  border-radius: 18px;
+  opacity: 1;
+}
+
+/* Mobile Phones: */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 720px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    h1 {
+      font-size: 5em;
+    }
+    h2 {
+      font-size: 3em;
+    }
+    .album_info {
+      width: 90%;
+      font-size: 1.5em;
+    }
+    .show_info {
+      width: 100%;
+      text-align: right;
+      font-size: 1.8em;
+      border-radius: 0;
+    }
+    .show_info p {
+      color: rgb(98, 218, 220);
+    }
+    .link_wrapper {
+      width: 80%;
+      margin: 0 auto;
+      text-align: left;
+    }
+    .click_for_tickets {
+      color: hotpink;
+    }
+}
+
+/* iPad: */
+@media only screen
+  and (min-device-width: 721px)
+  and (max-device-width: 768px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    .album_info {
+      width: 80%;
+    }
+    .show_info {
+      width: 30%;
+    }
+    .click_for_tickets {
+      color: hotpink;
+    }
+}
