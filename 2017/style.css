@@ -19,6 +19,10 @@ header {
   margin: 0 auto;
 }
 
+.header_image {
+  display: none;
+}
+
 h1, h2 {
   text-align: center;
 }
@@ -151,19 +155,31 @@ p {
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
     h1 {
-      font-size: 5em;
+      display: none;
+    }
+    .header_image {
+      display: unset;
+      visibility: visible;
+    }
+    .header_image img {
+      padding-top: 20px;
+    }
+    .header_info {
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%;
     }
     h2 {
-      font-size: 3em;
+      font-size: 3.2em;
     }
     .album_info {
       width: 90%;
-      font-size: 1.5em;
+      font-size: 1.8em;
     }
     .show_info {
       width: 100%;
       text-align: right;
-      font-size: 1.8em;
+      font-size: 1.4em;
       border-radius: 0;
     }
     .show_info p {
@@ -179,12 +195,30 @@ p {
     }
 }
 
-/* iPad: */
+/* iPad and iPad Pro */
 @media only screen
   and (min-device-width: 721px)
-  and (max-device-width: 768px)
+  and (max-device-width: 1025px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
+    h1 {
+      display: none;
+    }
+    h2 {
+      font-size: 3em;
+    }
+    .header_image {
+      display: unset;
+      visibility: visible;
+      }
+    .header_image img {
+      padding-top: 20px;
+    }
+    .header_info {
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%;
+    }
     .album_info {
       width: 80%;
     }
