@@ -35,9 +35,9 @@ h1 {
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 2.4em;
   font-weight: 500;
-  margin-top: 0.4em;
+  margin-top: 0.8em;
   letter-spacing: 0.05em;
 }
 
@@ -57,10 +57,17 @@ h3 {
 .band_name {
   color: rgb(240, 131, 0);
 }
+.band_name:hover {
+  color: rgb(224, 114 ,0);
+}
 
 .album_title {
   color: rgb(136, 184, 64);
   margin-top: 0em;
+  line-height: 0.7em;
+}
+.album_title:hover {
+  color: rgb(120, 170, 39);
 }
 
 p {
