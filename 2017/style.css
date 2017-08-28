@@ -155,6 +155,18 @@ p {
   opacity: 1;
 }
 
+/* Lock portrait mode on mobile phones and tablets: */
+@media (max-device-width: 1024px)
+  and (orientation: landscape) {
+    body {
+      -webkit-transform: rotate(-90deg);
+      -moz-transform: rotate(-90deg);
+      -o-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+      transform: rotate(-90deg);
+    }
+}
+
 /* Mobile Phones: */
 @media only screen
   and (min-device-width: 320px)
@@ -205,7 +217,7 @@ p {
 /* iPad and iPad Pro */
 @media only screen
   and (min-device-width: 721px)
-  and (max-device-width: 1025px)
+  and (max-device-width: 1024px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
     h1 {
