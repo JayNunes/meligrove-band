@@ -41,10 +41,6 @@ h2 {
   letter-spacing: 0.05em;
 }
 
-h2:hover {
-  color: hotpink;
-}
-
 h3 {
   font-size: 1.5em;
   font-weight: 400;
@@ -57,17 +53,11 @@ h3 {
 .band_name {
   color: rgb(240, 131, 0);
 }
-.band_name:hover {
-  color: rgb(224, 114 ,0);
-}
 
 .album_title {
   color: rgb(136, 184, 64);
   margin-top: 0em;
   line-height: 0.7em;
-}
-.album_title:hover {
-  color: rgb(120, 170, 39);
 }
 
 p {
@@ -109,30 +99,6 @@ p {
   bottom: 0;
   right: 0;
   border-top-left-radius: 30px;
-}
-
-.show_info p {
-  color: rgb(136, 184, 64);
-}
-
-.click_for_tickets {
-  color: rgb(240, 131, 0);
-}
-
-.show_info:hover {
-  background-color: rgba(0, 0, 0, 0.9);
-}
-
-.show_info:hover h3 {
-  color: rgb(98, 218, 220);
-}
-
-.show_info:hover p {
-  color: rgb(98, 218, 220);
-}
-
-.show_info:hover .click_for_tickets {
-  color: hotpink;
 }
 
 .instagram {
