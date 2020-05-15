@@ -12,7 +12,13 @@ body {
   padding: 0;
 }
 
+header {
+  width: 100%;
+  margin: 0 auto;
+}
+
 p {
+  font-size: 1.2em;
   letter-spacing: 1px;
 }
 
@@ -26,10 +32,6 @@ a, a:active, a:visited {
 
 a:hover {
   color: #ffffff;
-}
-
-h1 {
-  text-transform: uppercase;
 }
 
 .music {
@@ -81,7 +83,7 @@ footer a {
   text-decoration: none;
 }
 
-.footerLink {
+.footerText {
   text-align: center;
   margin: 0 auto;
   text-transform: uppercase;
@@ -89,9 +91,18 @@ footer a {
 
 .social {
   display: inline-block;
-  margin-top: 20px;
+  margin: 20px 0;
 }
 
+.music a:hover,
 .social a:hover {
-  opacity: 0.5;
+  opacity: 0.75;
+}
+
+@media only screen and (max-width: 414px) {
+
+  h1 {
+    padding-left: 1ch;
+  }
+
 }
