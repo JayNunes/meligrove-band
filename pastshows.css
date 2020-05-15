@@ -1,0 +1,49 @@
+main {
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+}
+
+h1 {
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+table {
+  max-width: 100%;
+  font-size: 0.8em;
+  letter-spacing: 1px;
+  font-weight: 200;
+}
+
+tr:nth-child(odd) {
+  background-color: #3b3b3d;
+}
+
+th {
+  background-color: #000000;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+th,
+td {
+  text-align: left;
+  vertical-align: middle;
+  padding: 1em 1em;
+  line-height: 1.2em;
+}
+
+@media only screen and (max-width: 414px) {
+
+  h1 {
+    font-size: 1.2em;
+    padding: 0 1ch;
+  }
+
+  table {
+    font-size: 0.6em;
+    letter-spacing: 0.5px;
+  }
+
+}
