@@ -5,8 +5,8 @@ main {
 }
 
 h1 {
-  font-weight: 400;
   letter-spacing: 1px;
+  line-height: 1.4em;
 }
 
 table {
