@@ -13,8 +13,24 @@ body {
 }
 
 header {
-  width: 100%;
-  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+header h1 {
+  margin-bottom: 0;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
 }
 
 p {
@@ -22,16 +38,17 @@ p {
   letter-spacing: 1px;
 }
 
-a {
-  text-decoration: none;
-}
-
 a, a:active, a:visited {
-  color: rgb(55,175,178);
+  color: rgb(62,203,207);
+  text-decoration: none;
 }
 
 a:hover {
   color: #ffffff;
+}
+
+a img:hover {
+  opacity: 0.5;
 }
 
 .music {
@@ -48,6 +65,22 @@ a:hover {
   height: 100%;
   margin: 0;
   padding: 0;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+  display: none;
+  color: #ffffff;
+}
+
+.album:hover .overlay {
+  position: absolute;
+  display: block;
+  background: rgba(0, 0, 0, .7);
 }
 
 .video {
@@ -71,19 +104,15 @@ a:hover {
 footer {
   width: 100%;
   text-align: center;
-  padding: 20px 0;
+  padding: 12px 0;
 }
 
-footer img {
+.social img {
   margin: 0 2px;
-  width: 50px;
+  width: 54px;
 }
 
-footer a {
-  text-decoration: none;
-}
-
-.footerText {
+.textlink {
   text-align: center;
   margin: 0 auto;
   text-transform: uppercase;
@@ -94,15 +123,14 @@ footer a {
   margin: 20px 0;
 }
 
-.music a:hover,
-.social a:hover {
-  opacity: 0.75;
-}
-
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 399px) {
 
   h1 {
-    padding-left: 1ch;
+    font-size: 1.6em;
+  }
+
+  .social img {
+    width: 42px;
   }
 
 }

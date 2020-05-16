@@ -4,9 +4,11 @@ main {
   color: #ffffff;
 }
 
-h1 {
+header h1 {
+  text-align: left;
   letter-spacing: 1px;
   line-height: 1.4em;
+  margin-bottom: 20px;
 }
 
 table {
@@ -34,16 +36,18 @@ td {
   line-height: 1.2em;
 }
 
-@media only screen and (max-width: 414px) {
-
+@media screen and (max-width: 770px) {
   h1 {
-    font-size: 1.2em;
     padding: 0 1ch;
   }
+}
 
+@media screen and (max-width: 568px) {
+  h1 {
+    font-size: 1.2em;
+  }
   table {
     font-size: 0.6em;
     letter-spacing: 0.5px;
   }
-
 }
